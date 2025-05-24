@@ -20,3 +20,15 @@ exports.createPurchase = async (req, res) => {
     apiResponse.error(res, error.message, 400);
   }
 };
+
+exports.getPurchases = async (req, res) => {
+  try {
+    const purchases = await Purchase.findAll({
+      where: { baseId: req.user.baseId },
+      include: [Asset]
+    });
+    apiResponse.success(res, 'Purchases retrieved', purchases);
+  } catch (error) {
+    apiResponse.error(res, 'Failed to retrieve purchases', 500);
+  }
+};

@@ -1,4 +1,5 @@
 const { Asset, Purchase, Transfer } = require('../models');
+const { Op } = require('sequelize');
 const apiResponse = require('../utils/apiResponse');
 
 exports.getBaseMetrics = async (req, res) => {
@@ -11,7 +12,6 @@ exports.getBaseMetrics = async (req, res) => {
       where: { [Op.or]: [{ fromBaseId: baseId }, { toBaseId: baseId }] } 
     });
 
-    // Calculate metrics
     const metrics = {
       totalAssets: assets.reduce((sum, a) => sum + a.current_quantity, 0),
       pendingTransfers: transfers.filter(t => t.status === 'pending').length,
