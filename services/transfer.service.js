@@ -1,43 +1,59 @@
 const { Transfer, Asset } = require('../models');
-const AssetService = require('./asset.service');
 
-class TransferService {
-  static async validateTransfer(fromBaseId, assetId, quantity) {
-    const currentBalance = await AssetService.getCurrentBalance(assetId, fromBaseId);
-    
-    if (currentBalance < quantity) {
-      throw new Error(`Insufficient assets for transfer. Available: ${currentBalance}`);
-    }
+const updateAssetBalance = async (assetId, baseId, quantityChange) => {
+  let assetBalance = await Asset.findOne({ where: { id: assetId, baseId } });
 
-    const asset = await Asset.findByPk(assetId);
-    if (!asset.transferrable) {
-      throw new Error('This asset type cannot be transferred');
-    }
+  // If asset doesn't exist at this base and quantityChange is positive, create it
+  if (!assetBalance && quantityChange > 0) {
+    // Fetch asset details from another base
+    const sourceAsset = await Asset.findOne({ where: { id: assetId } });
+    if (!sourceAsset) throw new Error(`Asset with id ${assetId} not found`);
 
-    return true;
+    assetBalance = await Asset.create({
+      name: sourceAsset.name,
+      type: sourceAsset.type,
+      current_quantity: 0,
+      baseId: baseId
+    });
   }
 
-  static async executeTransfer(fromBaseId, toBaseId, assetId, quantity) {
-    const transaction = await sequelize.transaction();
-    
-    try {
-      await AssetService.updateBalances(assetId, fromBaseId, -quantity);
-      await AssetService.updateBalances(assetId, toBaseId, quantity);
-      
-      const transfer = await Transfer.create({
-        fromBaseId,
-        toBaseId,
-        assetId,
-        quantity
-      }, { transaction });
-
-      await transaction.commit();
-      return transfer;
-    } catch (error) {
-      await transaction.rollback();
-      throw error;
-    }
+  if (!assetBalance) {
+    throw new Error(`Asset balance not found for assetId ${assetId} at base ${baseId}`);
   }
-}
 
-module.exports = TransferService;
+  const newQuantity = assetBalance.current_quantity + quantityChange;
+
+  if (newQuantity < 0) {
+    throw new Error(`Insufficient asset quantity at base ${baseId}`);
+  }
+
+  assetBalance.current_quantity = newQuantity;
+  await assetBalance.save();
+};
+
+const createTransfer = async ({ assetId, fromBaseId, toBaseId, quantity }) => {
+  if (fromBaseId === toBaseId) {
+    throw new Error('Source and destination base cannot be the same');
+  }
+
+  // Check availability and deduct quantity from source base
+  await updateAssetBalance(assetId, fromBaseId, -quantity);
+
+  // Add quantity to destination base
+  await updateAssetBalance(assetId, toBaseId, quantity);
+
+  // Create transfer record
+  const transfer = await Transfer.create({
+    assetId,
+    fromBaseId,
+    toBaseId,
+    quantity,
+    date: new Date()
+  });
+
+  return transfer;
+};
+
+module.exports = {
+  createTransfer,
+};
