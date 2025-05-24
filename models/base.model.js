@@ -1,28 +1,24 @@
 module.exports = (sequelize, DataTypes) => {
   const Base = sequelize.define('Base', {
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
     },
-    location: {
-      type: DataTypes.STRING,
-      allowNull: false
-    }
+    name: { type: DataTypes.STRING, allowNull: false, unique: true },
+    location: { type: DataTypes.STRING, allowNull: false }
   }, {
-    tableName: 'bases',
+    tableName: 'Bases',
     timestamps: true
   });
 
-  Base.associate = (models) => {
-    Base.hasMany(models.User, {
-      foreignKey: 'baseId',
-      as: 'personnel'
-    });
-    Base.hasMany(models.Asset, {
-      foreignKey: 'baseId',
-      as: 'assets'
-    });
+  Base.associate = models => {
+    Base.hasMany(models.User,      { foreignKey: 'baseId' });
+    Base.hasMany(models.Asset,     { foreignKey: 'baseId' });
+    Base.hasMany(models.Purchase,  { foreignKey: 'baseId' });
+    Base.hasMany(models.Assignment,{ foreignKey: 'baseId' });
+    Base.hasMany(models.Transfer,  { foreignKey: 'fromBaseId', as: 'outgoing' });
+    Base.hasMany(models.Transfer,  { foreignKey: 'toBaseId',   as: 'incoming' });
   };
 
   return Base;

@@ -1,25 +1,20 @@
 module.exports = (sequelize, DataTypes) => {
   const AuditLog = sequelize.define('AuditLog', {
-    action: {
-      type: DataTypes.STRING,
-      allowNull: false
+    id:      { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true },
+    userId:  {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: { model: 'Users', key: 'id' },
+      onDelete: 'SET NULL'
     },
-    details: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    }
+    action:    { type: DataTypes.STRING, allowNull: false },
+    endpoint:  { type: DataTypes.STRING, allowNull: false },
+    method:    { type: DataTypes.STRING, allowNull: false },
+    timestamp: { type: DataTypes.DATE, defaultValue: DataTypes.NOW }
   }, {
-    tableName: 'audit_logs',
-    timestamps: true,
-    updatedAt: false
+    tableName: 'AuditLogs',
+    timestamps: true
   });
-
-  AuditLog.associate = (models) => {
-    AuditLog.belongsTo(models.User, {
-      foreignKey: 'userId',
-      as: 'user'
-    });
-  };
 
   return AuditLog;
 };

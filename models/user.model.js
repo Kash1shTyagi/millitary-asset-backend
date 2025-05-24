@@ -1,29 +1,29 @@
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
     },
-    password: {
-      type: DataTypes.STRING,
+    username: { type: DataTypes.STRING, unique: true, allowNull: false },
+    password: { type: DataTypes.STRING, allowNull: false },
+    role: {
+      type: DataTypes.ENUM('Admin','BaseCommander','LogisticsOfficer'),
       allowNull: false
     },
-    role: {
-      type: DataTypes.ENUM('admin', 'commander', 'logistics'),
-      allowNull: false,
-      defaultValue: 'logistics'
+    baseId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: { model: 'Bases', key: 'id' },
+      onDelete: 'SET NULL'
     }
   }, {
-    tableName: 'users',
+    tableName: 'Users',
     timestamps: true
   });
 
-  User.associate = (models) => {
-    User.belongsTo(models.Base, {
-      foreignKey: 'baseId',
-      as: 'base'
-    });
+  User.associate = models => {
+    User.belongsTo(models.Base, { foreignKey: 'baseId', as: 'base' });
   };
 
   return User;

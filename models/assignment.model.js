@@ -1,27 +1,34 @@
 module.exports = (sequelize, DataTypes) => {
   const Assignment = sequelize.define('Assignment', {
-    personnel_name: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    quantity: {
+    id: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      autoIncrement: true,
+      primaryKey: true
     },
-    date: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW
+    assignee: { type: DataTypes.STRING, allowNull: false },
+    quantity: { type: DataTypes.INTEGER, allowNull: false },
+    expended: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
+    date:     { type: DataTypes.DATEONLY, allowNull: false },
+    baseId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { model: 'Bases', key: 'id' },
+      onDelete: 'CASCADE'
+    },
+    assetId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { model: 'Assets', key: 'id' },
+      onDelete: 'CASCADE'
     }
   }, {
-    tableName: 'assignments',
+    tableName: 'Assignments',
     timestamps: true
   });
 
-  Assignment.associate = (models) => {
-    Assignment.belongsTo(models.Asset, {
-      foreignKey: 'assetId',
-      as: 'asset'
-    });
+  Assignment.associate = models => {
+    Assignment.belongsTo(models.Base,  { foreignKey: 'baseId' });
+    Assignment.belongsTo(models.Asset, { foreignKey: 'assetId' });
   };
 
   return Assignment;
