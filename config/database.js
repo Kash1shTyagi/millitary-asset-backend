@@ -45,7 +45,7 @@ const loadModels = () => {
   ];
 
   for (const definer of modelDefiners) {
-    definer(sequelize);
+    definer(sequelize, Sequelize.DataTypes);
   }
 
   const { User, Base, Asset, Purchase, Transfer } = sequelize.models;
