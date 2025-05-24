@@ -1,32 +1,21 @@
 const jwt = require('jsonwebtoken');
-const logger = require('../utils/logger');
-const config = require('../config/config');
+const { errorResponse } = require('../utils/apiResponse');
 
-const authenticateJWT = (req, res, next) => {
+const JWT_SECRET = process.env.JWT_SECRET;
+
+module.exports = (req, res, next) => {
   const authHeader = req.headers.authorization;
-  
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    logger.warn('JWT Authentication Failed: No token provided');
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
+
+  if (!authHeader || !authHeader.startsWith('Bearer '))
+    return res.status(401).json(errorResponse('Token missing'));
 
   const token = authHeader.split(' ')[1];
-  
-  jwt.verify(token, config.jwtSecret, (err, decoded) => {
-    if (err) {
-      logger.error(`JWT Verification Failed: ${err.message}`);
-      return res.status(403).json({ error: 'Forbidden' });
-    }
-    
-    req.user = {
-      id: decoded.userId,
-      role: decoded.role,
-      baseId: decoded.baseId
-    };
-    
-    logger.info(`Authenticated user ${decoded.userId} (${decoded.role})`);
-    next();
-  });
-};
 
-module.exports = authenticateJWT;
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET);
+    req.user = decoded; // contains: id, role, baseId
+    next();
+  } catch (err) {
+    return res.status(403).json(errorResponse('Invalid or expired token'));
+  }
+};
