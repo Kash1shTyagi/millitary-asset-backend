@@ -1,19 +1,22 @@
-const apiResponse = {
-  success: (res, message, data = {}, status = 200) => {
-    res.status(status).json({
+// Example apiResponse.js
+module.exports = {
+  success: (res, message, data = null, status = 200) => {
+    return res.status(status).json({
       success: true,
       message,
-      data
+      data,
     });
   },
 
-  error: (res, message, status = 500, error = {}) => {
-    res.status(status).json({
+  error: (res, message, status = 500) => {
+    return res.status(status).json({
       success: false,
       message,
-      error: process.env.NODE_ENV === 'development' ? error : {}
     });
-  }
-};
+  },
 
-module.exports = apiResponse;
+  errorResponse: (message) => ({
+    success: false,
+    message,
+  }),
+};
