@@ -1,0 +1,98 @@
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:16:06.117Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:18:12.846Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:24:27.817Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:25:05.103Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:25:49.084Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:27:17.263Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:31:58.793Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:33:16.945Z"}
+{"level":"error","message":"400 - Expected double-quoted property name in JSON at position 58 - /auth/login - POST - ::1","timestamp":"2025-05-24T13:34:10.819Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:34:23.838Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:35:07.180Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:37:09.104Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:39:32.801Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:41:16.365Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:42:03.356Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:44:02.219Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:46:41.973Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:55:30.895Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T13:56:41.087Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:00:01.542Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:02:42.505Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:04:58.494Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:07:47.425Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:11:08.103Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:12:54.034Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:15:41.797Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:17:59.297Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:18:14.211Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:19:22.764Z"}
+{"level":"error","message":"400 - Expected double-quoted property name in JSON at position 60 - /auth/login - POST - ::1","timestamp":"2025-05-24T14:19:39.082Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:19:49.608Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:20:11.597Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:20:43.417Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:21:07.944Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:22:46.819Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:22:54.585Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:24:04.252Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:25:59.764Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:28:53.481Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:33:00.460Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:33:19.887Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:34:02.924Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:36:20.369Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:38:28.228Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:38:50.216Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:39:45.983Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:39:55.828Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:40:31.714Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:40:54.979Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:44:21.077Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:44:46.147Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:45:34.400Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:46:09.313Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T14:46:29.678Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:32:19.895Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:33:42.007Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:37:01.799Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:37:23.621Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:42:07.400Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:42:25.173Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:44:14.045Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:44:27.296Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:45:44.698Z"}
+{"level":"error","message":"Asset creation error: column \"quantity\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:46:01.411Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:46:01.649Z"}
+{"level":"error","message":"Asset creation error: column \"quantity\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:46:45.329Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:46:45.594Z"}
+{"level":"error","message":"Asset creation error: column \"quantity\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:48:06.327Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:48:06.564Z"}
+{"level":"error","message":"Asset creation error: column \"quantity\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:48:25.630Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:48:25.859Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:52:10.347Z"}
+{"level":"error","message":"Asset creation error: column \"baseId\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:52:25.460Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:52:25.692Z"}
+{"level":"error","message":"Asset creation error: column \"baseId\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:52:35.313Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:52:35.546Z"}
+{"level":"error","message":"Asset creation error: column \"baseId\" of relation \"Assets\" does not exist","timestamp":"2025-05-24T15:53:02.034Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T15:53:02.267Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:03:23.106Z"}
+{"level":"error","message":"Asset creation error: invalid input syntax for type integer: \"7b7ea718-2d64-4ed3-9f07-5e1287bf0dfe\"","timestamp":"2025-05-24T16:03:37.917Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:03:38.147Z"}
+{"level":"error","message":"Asset creation error: invalid input syntax for type integer: \"b9372bb6-8161-4a23-9b1c-230998a3fbea\"","timestamp":"2025-05-24T16:04:07.969Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:04:08.197Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:05:43.391Z"}
+{"level":"error","message":"Asset creation error: invalid input syntax for type integer: \"7677716a-46b7-4f59-ae56-e9aefa71e44e\"","timestamp":"2025-05-24T16:06:14.073Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:06:14.304Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:09:50.036Z"}
+{"level":"error","message":"Asset creation error: invalid input syntax for type integer: \"dcddd227-1e63-4769-9598-23ea2da2756c\"","timestamp":"2025-05-24T16:10:03.394Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:10:03.626Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:14:50.577Z"}
+{"level":"error","message":"Asset creation error: invalid input syntax for type integer: \"323fc1d1-b6b9-47c7-9bab-524987031442\"","timestamp":"2025-05-24T16:15:06.739Z"}
+{"level":"error","message":"Audit logging failed: column \"userId\" of relation \"AuditLogs\" does not exist","timestamp":"2025-05-24T16:15:07.050Z"}
+{"level":"error","message":"Audit logging failed: notNull Violation: AuditLog.endpoint cannot be null,\nnotNull Violation: AuditLog.method cannot be null","timestamp":"2025-05-24T17:24:45.962Z"}
+{"level":"error","message":"400 - Expected double-quoted property name in JSON at position 66 - /auth/login - POST - ::1","timestamp":"2025-05-24T17:36:37.999Z"}
+{"level":"error","message":"Asset creation error: Validation error","timestamp":"2025-05-24T17:42:44.043Z"}
+{"level":"error","message":"Asset creation error: Error\n    at Query.run (C:\\Users\\KSHIT\\OneDrive\\Desktop\\test\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n    at C:\\Users\\KSHIT\\OneDrive\\Desktop\\test\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryInterface.insert (C:\\Users\\KSHIT\\OneDrive\\Desktop\\test\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\KSHIT\\OneDrive\\Desktop\\test\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Asset.create (C:\\Users\\KSHIT\\OneDrive\\Desktop\\test\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async createAsset (C:\\Users\\KSHIT\\OneDrive\\Desktop\\test\\controllers\\asset.controller.js:28:19)","timestamp":"2025-05-24T17:45:00.438Z"}
+{"level":"error","message":"Asset update error: AssetService.updateBalances is not a function","timestamp":"2025-05-24T20:07:26.399Z"}
+{"level":"error","message":"Asset update error: AssetService.updateBalances is not a function","timestamp":"2025-05-24T20:12:20.585Z"}
