@@ -187,3 +187,6 @@
 {"level":"info","message":"Audit logged: GET /metrics - 500","timestamp":"2025-05-24T21:34:44.533Z"}
 {"level":"info","message":"Audit logged: POST /login - 200","timestamp":"2025-05-24T21:40:12.446Z"}
 {"level":"info","message":"Audit logged: GET /metrics - 200","timestamp":"2025-05-24T21:40:29.086Z"}
+{"level":"info","message":"Audit logged: GET /metrics - 200","timestamp":"2025-05-24T21:57:26.741Z"}
+{"level":"info","message":"Audit logged: POST /login - 200","timestamp":"2025-05-25T07:39:17.597Z"}
+{"level":"info","message":"Audit logged: GET /metrics - 200","timestamp":"2025-05-25T07:40:11.505Z"}
